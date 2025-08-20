@@ -1,0 +1,54 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  /* border: 2px solid red; */
+  justify-content: center;
+}
+
+/* Heading */
+.app-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1890ff;
+}
+
+/* Controls above the table */
+.app-controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Table styling */
+.ant-table {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Center table & limit width */
+.table-wrapper {
+  width: 90vw;
+  max-width: 1000px;
+}
+
+/* Modal styling */
+.ant-modal-title {
+  font-weight: 600;
+}
