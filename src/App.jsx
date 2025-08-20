@@ -66,7 +66,7 @@ export default function App() {
       if (state.genderFilter && state.genderFilter !== "all")
         params.gender = state.genderFilter;
       const res = await api.get("/users", { params });
-      // Feathers sometimes returns paginated object {data: [...]} - handle both
+
       const users = Array.isArray(res.data) ? res.data : res.data.data || [];
       dispatch({ type: "setUsers", payload: users });
     } catch (err) {
@@ -77,7 +77,6 @@ export default function App() {
 
   useEffect(() => {
     fetchUsers();
-    // eslint-disable-next-line
   }, [state.genderFilter]);
 
   const openAddModal = () => {
